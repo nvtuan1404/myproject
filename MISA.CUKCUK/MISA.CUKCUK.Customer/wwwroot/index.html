@@ -7,6 +7,7 @@
     <link href="/CSS/bootstrap.min.css" rel="stylesheet" />
     <link href="/CSS/common/common.css" rel="stylesheet" />
     <link href="/CSS/common/header.css" rel="stylesheet" />
+    <link href="/CSS/common/sidebar.css" rel="stylesheet" />
     <link href="/CSS/common/toolbar.css" rel="stylesheet" />
     <link href="/CSS/common/grid.css" rel="stylesheet" />
     <link href="/CSS/Views/index.css" rel="stylesheet" />
@@ -25,7 +26,7 @@
                     </div>
                     <div class="header-left-option">
                         <div class="header-left-form">
-                            <input class="header-left-input" type="text" value="--Chuỗi nhà hàng--"/>
+                            <input class="header-left-input" type="text" value="--Chuỗi nhà hàng--" />
                         </div>
                         <div class="header-left-button"></div>
                     </div>
@@ -49,9 +50,43 @@
         <!--Phần content-->
         <div class="container-content">
             <!--Phần sidebar-->
-            <div class="sidebar"></div>
-            <!--Phần table-->
+            <div class="sidebar">
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-overview"></div>
+                    <div class="sidebar-text">Tổng quan</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-report"></div>
+                    <div class="sidebar-text">Báo cáo</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-promotion"></div>
+                    <div class="sidebar-text">Khuyến mại</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-category"></div>
+                    <div class="sidebar-text">Danh mục</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-setting"></div>
+                    <div class="sidebar-text">Thiết lập hệ thống</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-help"></div>
+                    <div class="sidebar-text">Trợ giúp</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-subscriber"></div>
+                    <div class="sidebar-text">Thuê bao</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-5food"></div>
+                    <div class="sidebar-text">5Food</div>
+                </div>
+            </div>
+            <!--Phần content-->
             <div class="container-content-right">
+                <!--Phần danh mục-->
                 <div class="content">
                     <div class="row-title">
                         <div class="col-sm-6 title-left">
@@ -67,6 +102,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Phần toolbar-->
                     <div class="toolbar">
                         <div class="toolbar-item">
                             <div class="toolbar-item-icon toolbar-item-add"></div>
@@ -108,24 +144,103 @@
                             <div class="toolbar-item-text toolbar-item-min-width-help">Giúp</div>
                         </div>
                     </div>
+                    <!--Phần table-->
                     <div class="grid">
                         <div class="table-responsive">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th><div class="grid-column-title">Mã khách hàng</div></th>
-                                        <th><div class="grid-column-title">Tên khách hàng</div></th>
-                                        <th><div class="grid-column-title">Tên công ty</div></th>
-                                        <th><div class="grid-column-title">Mã số thuế</div></th>
-                                        <th><div class="grid-column-title">Địa chỉ</div></th>
-                                        <th><div class="grid-column-title">Số điện thoại</div></th>
-                                        <th><div class="grid-column-title">Email</div></th>
-                                        <th><div class="grid-column-title">Mã thẻ thành viên</div></th>
-                                        <th><div class="grid-column-title">Hạng thẻ</div></th>
-                                        <th><div class="grid-column-title">Số tiền nợ</div></th>
-                                        <th><div class="grid-column-title">Ghi chú</div></th>
-                                        <th><div class="grid-column-title">Thành viên 5Food</div></th>
-                                        <th><div class="grid-column-title">Ngừng theo dõi</div></th>
+                                        <th>
+                                            <div class="grid-column-title column-customer-code">Mã khách hàng</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-customer-name">Tên khách hàng</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-company-name">Tên công ty</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-tax-code">Mã số thuế</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-address">Địa chỉ</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-phone">Số điện thoại</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-email">Email</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-card-code">Mã thẻ thành viên</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-card-level">Hạng thẻ</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-amount">Số tiền nợ</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-note">Ghi chú</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-5food-member">Thành viên 5Food</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="grid-column-title column-unfollow">Ngừng theo dõi</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -145,209 +260,14 @@
                                         <td>Không</td>
                                     </tr>
                                     <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
+                                        <td>KH0002</td>
+                                        <td>Nguyễn Thị Tuyết</td>
+                                        <td>BIDV</td>
+                                        <td>483749343</td>
                                         <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
-                                        <td>VIP</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>Có</td>
-                                        <td>Không</td>
-                                    </tr>
-                                    <tr>
-                                        <td>KH0001</td>
-                                        <td>Nguyễn Văn Tuấn</td>
-                                        <td>MISA</td>
-                                        <td>987651234</td>
-                                        <td>Thường Tín, Hà Nội</td>
-                                        <td>0974791898</td>
-                                        <td>nvtuan1404@gmail.com</td>
-                                        <td>87887888373</td>
+                                        <td>0978472832</td>
+                                        <td>nttuyet@gmail.com</td>
+                                        <td>5495849584</td>
                                         <td>VIP</td>
                                         <td>0</td>
                                         <td></td>
@@ -364,6 +284,5 @@
     </div>
     <script src="/Scripts/lib/jquery-3.3.1.min.js"></script>
     <script src="/Scripts/lib/bootstrap.min.js"></script>
-
 </body>
 </html>

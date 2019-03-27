@@ -1,14 +1,17 @@
 ﻿* {
     box-sizing: border-box;
 }
-body{
-    margin:0px;
-    bottom:0px;
+
+body {
+    margin: 0px;
+    bottom: 0px;
     width: 100%;
 }
-.container-fluid{
+
+.container-fluid {
     padding: 0px;
 }
+
 .header {
     background-color: #0973b9;
     height: 55px;
@@ -17,6 +20,7 @@ body{
     right: 0px;
     left: 0px;
 }
+
 .container-content {
     display: flex;
     position: absolute;
@@ -25,13 +29,16 @@ body{
     bottom: 0px;
     left: 0px;
 }
+
 .sidebar {
     background-color: #0973b9;
     width: 230px;
+    border-top: 1px solid #016087;
 }
+
 .container-content-right {
     position: relative;
-    flex:1;
+    flex: 1;
 }
 
 .content {
