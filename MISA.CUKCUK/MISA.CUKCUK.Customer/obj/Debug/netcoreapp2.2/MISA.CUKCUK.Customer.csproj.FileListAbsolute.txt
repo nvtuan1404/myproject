@@ -1,0 +1,14 @@
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\bin\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.deps.json
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\bin\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.runtimeconfig.json
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\bin\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.runtimeconfig.dev.json
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\bin\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.dll
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\bin\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.pdb
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\obj\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.csproj.CoreCompileInputs.cache
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\obj\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.RazorAssemblyInfo.cache
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\obj\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.RazorAssemblyInfo.cs
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\obj\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.AssemblyInfoInputs.cache
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\obj\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.AssemblyInfo.cs
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\obj\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.RazorTargetAssemblyInfo.cache
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\obj\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.dll
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\obj\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.pdb
+E:\NVTuan\MISA.CUKCUK\MISA.CUKCUK.Customer\obj\Debug\netcoreapp2.2\MISA.CUKCUK.Customer.csprojAssemblyReference.cache
