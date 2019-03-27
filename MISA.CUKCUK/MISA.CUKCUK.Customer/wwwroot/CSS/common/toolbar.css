@@ -1,4 +1,7 @@
-﻿.toolbar {
+﻿* {
+    box-sizing: border-box;
+}
+.toolbar {
     background-color: #ededed !important;
     border-color: #d9d9d9;
     border-style: solid;

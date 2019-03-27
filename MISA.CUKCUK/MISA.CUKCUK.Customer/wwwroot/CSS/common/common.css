@@ -1,17 +1,18 @@
-﻿/*Định dạng font-face và size cho body*/
+﻿* {
+    box-sizing: border-box;
+}
 html, body {
     font-family: TahomaCustom !important;
     font-size: 13px;
 }
-/*Set kích thước cho phần title*/
-.content .row-title {
+.row-title {
     height: 44px;
     width: 100%;
     display: flex;
     overflow: hidden;
 }
 
-    .content .row-title .title-left {
+    .row-title .title-left {
         display: flex;
         align-items: center;
         padding-left: 0px;
@@ -20,7 +21,7 @@ html, body {
         margin-bottom: 8px;
     }
 
-    .content .row-title .title-right {
+    .row-title .title-right {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -30,7 +31,7 @@ html, body {
         margin-bottom: 4px;
     }
 
-    .content .row-title .title-left .title-category {
+    .row-title .title-left .title-category {
         color: #000;
         font-size: 22px;
         line-height: 36px;
@@ -38,7 +39,7 @@ html, body {
         padding: 0 5px 2px 0;
     }
 
-    .content .row-title .title-left .title-icon {
+    .row-title .title-left .title-icon {
         font-family:Webdings;
         width: 20px;
         font-size: 20px;
@@ -49,39 +50,50 @@ html, body {
         height: 20px;
     }
 
-    .content .row-title .title-left .title-text-customer {
+    .row-title .title-left .title-text-customer {
         font-weight: normal;
         font-size: 16px;
         color: #0072bc;
         padding: 0 5px 0 5px;
     }
 
-    .content .row-title .title-right .title-back-setting {
+    .row-title .title-right .title-back-setting {
         height: 28px;
         border: 1px solid #ccc;
         text-align: center;
-        background-color: #fcfcfc !important;
+        background-color: #fcfcfc;
         padding: 4px 16px 4px 16px;
         font-size: 12px !important;
         margin-right: 8px;
         line-height: 18px;
     }
-    .content .row-title .title-right .title-feedback {
+        .row-title .title-right .title-back-setting:hover {
+            background-color: #E8f1EB;
+            border: 1px solid #126daf;
+            cursor: pointer;
+        }
+
+    .row-title .title-right .title-feedback {
         height: 28px;
         display: flex;
         border: 1px solid #ccc;
-        background-color: #fcfcfc !important;
+        background-color: #fcfcfc;
         align-items: center;
         font-size: 12px !important;
         padding: 3px 12px 3px 3px;
     }
-        .content .row-title .title-right .title-feedback .title-feedback-text {
-            text-align: center;
-            padding: 0px 5px;
-            line-height: 17px;
+        .row-title .title-right .title-feedback:hover {
+            background-color: #E8f1EB;
+            border: 1px solid #126daf;
+            cursor: pointer;
         }
+            .row-title .title-right .title-feedback .title-feedback-text {
+                text-align: center;
+                padding: 0px 5px;
+                line-height: 17px;
+            }
 
-        .content .row-title .title-right .title-feedback .title-feedback-icon {
+        .row-title .title-right .title-feedback .title-feedback-icon {
             background-image: url(/contents/images/viewemail.png);
             height: 16px;
             width: 16px;

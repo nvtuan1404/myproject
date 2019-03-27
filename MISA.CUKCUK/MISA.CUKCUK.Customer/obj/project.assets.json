@@ -12096,11 +12096,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\NVTuan\\MISA.CUKCUK\\MISA.CUKCUK.Customer\\MISA.CUKCUK.Customer.csproj",
+      "projectUniqueName": "E:\\NVTuan\\myproject\\MISA.CUKCUK\\MISA.CUKCUK.Customer\\MISA.CUKCUK.Customer.csproj",
       "projectName": "MISA.CUKCUK.Customer",
-      "projectPath": "E:\\NVTuan\\MISA.CUKCUK\\MISA.CUKCUK.Customer\\MISA.CUKCUK.Customer.csproj",
+      "projectPath": "E:\\NVTuan\\myproject\\MISA.CUKCUK\\MISA.CUKCUK.Customer\\MISA.CUKCUK.Customer.csproj",
       "packagesPath": "C:\\Users\\nvtuan\\.nuget\\packages\\",
-      "outputPath": "E:\\NVTuan\\MISA.CUKCUK\\MISA.CUKCUK.Customer\\obj\\",
+      "outputPath": "E:\\NVTuan\\myproject\\MISA.CUKCUK\\MISA.CUKCUK.Customer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

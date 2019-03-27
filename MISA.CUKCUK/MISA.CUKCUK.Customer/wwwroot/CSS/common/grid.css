@@ -1,4 +1,7 @@
-﻿.grid {
+﻿* {
+    box-sizing: border-box;
+}
+.grid {
     border-color: #ccc;
     border-style: solid;
     border-width: 0px 1px 1px 1px;
@@ -32,7 +35,6 @@ table {
             tr:nth-child(even) { /*CSS :nth-child() Selector chọn các row. Nếu row là số even(lẻ) thì đổ màu. Có thể truyền tham số 3m+0*/
                 background-color: #fafafa;
             }
-
 .grid .table-responsive {
     position: absolute;
     bottom: 0px;
