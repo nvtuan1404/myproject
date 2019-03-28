@@ -1,7 +1,8 @@
 ﻿* {
     box-sizing: border-box;
 }
-.toolbar {
+
+.toolbar-header {
     background-color: #ededed !important;
     border-color: #d9d9d9;
     border-style: solid;
@@ -12,99 +13,109 @@
     overflow: hidden; /*Nếu zoom quá kích thước màn hình nội dung bị tràn ra sẽ ẩn đi*/
 }
 
-    .toolbar .toolbar-item {
+    .toolbar-header .toolbar-header-item {
         display: flex;
         border: 1px solid transparent;
         cursor: pointer;
         padding-left: 4px;
         padding-right: 4px;
         align-items: center;
-        justify-content:center;
+        justify-content: center;
     }
 
-        .toolbar .toolbar-item:hover {
+        .toolbar-header .toolbar-header-item:hover {
             border: 1px solid #0973b9;
             background-color: #fff;
         }
 
-        .toolbar .toolbar-item .toolbar-item-icon {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-icon {
             background-image: url('/Contents/Images/Iconsprite.png');
             width: 16px;
             height: 16px;
             background-repeat: no-repeat;
         }
-        .toolbar .toolbar-item .toolbar-item-add {
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-add {
             background-position: 0-2648px !important;
         }
 
-        .toolbar .toolbar-item .toolbar-item-dupplicate {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-dupplicate {
             background-position: 0-1888px !important;
         }
 
-        .toolbar .toolbar-item .toolbar-item-edit {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-edit {
             background-image: url('/contents/images/edit16.png') !important;
         }
 
-        .toolbar .toolbar-item .toolbar-item-delete {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-delete {
             background-position: 0-2680px !important;
         }
 
-        .toolbar .toolbar-item .toolbar-item-refresh {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-refresh {
             background-position: 0-2584px !important;
         }
 
-        .toolbar .toolbar-item .toolbar-item-import {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-import {
             background-image: url('/contents/images/import16.png') !important;
         }
 
-        .toolbar .toolbar-item .toolbar-item-export {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-export {
             background-image: url('/contents/images/excel_97_24.png') !important;
         }
 
-        .toolbar .toolbar-item .toolbar-item-lump {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-lump {
             background-image: url('/contents/images/ic_gopkhachhang.png') !important;
             width: 19px !important;
         }
 
-        .toolbar .toolbar-item .toolbar-item-help {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-help {
             background-position: 0-1600px !important;
         }
 
-        .toolbar .toolbar-item .toolbar-item-text {
+        .toolbar-header .toolbar-header-item .toolbar-header-item-text {
             padding-left: 5px;
             padding-right: 5px;
         }
 
-    .toolbar .toolbar-boder-left {
+    .toolbar-header .toolbar-header-boder-left {
         border-style: solid;
         border-width: 0px 0px 0px 1px;
         border-left-color: #ccc;
         margin: 4px 4px 4px 0px;
     }
-    .toolbar .toolbar-item .toolbar-item-min-width-add {
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-add {
         min-width: 43px;
     }
-    .toolbar .toolbar-item .toolbar-item-min-width-dupplicate {
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-dupplicate {
         min-width: 66px;
     }
-    .toolbar .toolbar-item .toolbar-item-min-width-edit {
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-edit {
         min-width: 32px;
     }
-    .toolbar .toolbar-item .toolbar-item-min-width-delete {
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-delete {
         min-width: 32px;
     }
-    .toolbar .toolbar-item .toolbar-item-min-width-refresh {
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-refresh {
         min-width: 32px;
     }
-    .toolbar .toolbar-item .toolbar-item-min-width-import {
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-import {
         min-width: 72px;
     }
-    .toolbar .toolbar-item .toolbar-item-min-width-export {
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-export {
         min-width: 72px;
     }
-    .toolbar .toolbar-item .toolbar-item-min-width-lump {
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-lump {
         min-width: 104px;
     }
-    .toolbar .toolbar-item .toolbar-item-min-width-help {
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-help {
         min-width: 32px;
     }

@@ -31,10 +31,10 @@ table tbody tr:hover {
 .grid {
     border-color: #ccc;
     border-style: solid;
-    border-width: 0px 1px 1px 1px;
-    overflow-x: auto;
+    border-width: 0px 1px;
     position: absolute;
-    bottom: 8px;
+    /*overflow-x: auto;*/
+    bottom: 34px;
     top: 79px;
     right: 8px;
     left: 8px;
@@ -44,7 +44,7 @@ table tbody tr:hover {
         position: absolute;
         bottom: 0px;
         top: 0px;
-        overflow-x: visible;
+        overflow: auto;
     }
 
     .grid .grid-column-title {

@@ -1,0 +1,13 @@
+﻿*{
+    box-sizing: border-box;
+}
+
+.toolbar-pagging{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    height: 26px;
+    max-height: 26px;
+    border: 1px solid #ccc;
+}

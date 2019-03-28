@@ -1,10 +1,12 @@
 ﻿* {
     box-sizing: border-box;
 }
+
 html, body {
     font-family: TahomaCustom !important;
     font-size: 13px;
 }
+
 .row-title {
     height: 44px;
     width: 100%;
@@ -40,7 +42,7 @@ html, body {
     }
 
     .row-title .title-left .title-icon {
-        font-family:Webdings;
+        font-family: Webdings;
         width: 20px;
         font-size: 20px;
         line-height: 20px;
@@ -67,6 +69,7 @@ html, body {
         margin-right: 8px;
         line-height: 18px;
     }
+
         .row-title .title-right .title-back-setting:hover {
             background-color: #E8f1EB;
             border: 1px solid #126daf;
@@ -82,16 +85,18 @@ html, body {
         font-size: 12px !important;
         padding: 3px 12px 3px 3px;
     }
+
         .row-title .title-right .title-feedback:hover {
             background-color: #E8f1EB;
             border: 1px solid #126daf;
             cursor: pointer;
         }
-            .row-title .title-right .title-feedback .title-feedback-text {
-                text-align: center;
-                padding: 0px 5px;
-                line-height: 17px;
-            }
+
+        .row-title .title-right .title-feedback .title-feedback-text {
+            text-align: center;
+            padding: 0px 5px;
+            line-height: 17px;
+        }
 
         .row-title .title-right .title-feedback .title-feedback-icon {
             background-image: url(/contents/images/viewemail.png);
