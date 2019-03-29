@@ -1,22 +1,26 @@
 ﻿class CustomerJS {
+    // Hàm loadData để gọi api lấy dữ liệu đổ về
+    // Created by NVTuan ngày 29/3/2019
     loadData() {
         $.ajax({
             url: "https://localhost:44370/api/Customer/Get",
             method: "GET",
             success: function (data) {
                 debugger
+                //var dataCustomer = JSON.stringify(data); // Chuyển dữ liệu trả về từ Object sang chuỗi JSON
                 CusJS.builDataIntoTable(data);
             },
             error: function () {
-                debugger
-                console.log("Có lỗi khi lấy dữ liệu")
+                console.log("Có lỗi khi lấy dữ liệu");
             }
         });
     }
 }
 
-var CJS = new CustomerJS();
-CJS.loadData();
+$(document).ready(function () {
+    var CJS = new CustomerJS();
+    CJS.loadData();
+});
 
 var CusJS = Object.create({
     // Hàm build dữ liệu lên table
@@ -25,17 +29,19 @@ var CusJS = Object.create({
         debugger
         var table = $('#tbodyCustomer');
         table.html('');
-        var column = $('#tableCustomer tr th'); // Lấy thông tin các cột dữ liệu
-        var fieldData = []; // Khai báo một mảng để lưu các fielData
+        var column = $('#tableCustomer thead tr th'); // Lấy thông tin các cột dữ liệu
+        var fieldData = []; // Khai báo một mảng để lưu các fieldData
         $.each(column,function (index, item) {
-            var itemFieldData = $(item).attr('fielData'); // Thấy trường nào có fieldData thì lấy tên thuộc tính của trường đó
+            var itemFieldData = $(item).attr('fieldData'); // Thấy trường nào có fieldData thì lấy tên thuộc tính của trường đó
+            fieldData.push(itemFieldData);
         });
-        $.each(data, function (item, index) {
+        data.forEach(function (item, index) {
+            debugger
             var htmlItem = [];
             htmlItem.push('<tr>'); // Thêm thẻ mở td của một hàng vào mảng htmlItem
-            $.each(fieldData, function (indexFile, valueFiled) {
-                var value = item[valueFiled]; // Lấy giá trị mỗi trường
-                htmlItem.push('<td>' + value + '<td>');
+            fieldData.forEach(function (value, index) { // Duyệt lần lượt các dòng
+                var valueCustomer = item[value]; // Lấy giá trị mỗi cột
+                htmlItem.push('<td>' + valueCustomer + '<td>');
             });
             htmlItem.push('</tr>');
             table.append(htmlItem.join(""));

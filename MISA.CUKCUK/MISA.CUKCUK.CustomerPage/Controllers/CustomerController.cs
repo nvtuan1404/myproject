@@ -7,13 +7,13 @@ using MISA.CUKCUK.CustomerPage.Models;
 
 namespace MISA.CUKCUK.CustomerPage.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Customer/[action]")]
     [ApiController]
     public class CustomerController : ControllerBase
     {
         // GET api/Customer
         [HttpGet]
-        public ActionResult<IEnumerable<Customer>> Get()
+        public IEnumerable<Customer> Get()
         {
             return Customer.customers;
         }
