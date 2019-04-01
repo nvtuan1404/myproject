@@ -1,4 +1,22 @@
-﻿class CustomerJS {
+﻿$(document).ready(function () {
+    CJS.loadData();// Gọi hàm load dữ liệu lên bảng
+    var buttons = [{ text: "Lưu" }, { text: "Hủy" }, { text: "Giúp" }];
+    testDialog = new Dialog("#dialogCustomer", 400, 400, buttons);
+});
+
+class CustomerJS {
+
+    constructor(name) {
+        this.Adress = name;
+        this.initEvents();
+        this.DialogDetail = new Dialog("#dialogCustomer", 400, 400);
+    }
+
+    // Hàm khởi tạo các sự kiện
+    // Created by NVTuan - 1/4/2019
+    initEvents() {
+        $('#tableCustomer').on('click', '#tbodyCustomer tr', CusObject.rowSelected); // Gọi hàm chọn một bản ghi 
+    }   
 
     // Hàm loadData để gọi api lấy dữ liệu đổ về
     // Created by NVTuan ngày 29/3/2019
@@ -18,66 +36,31 @@
     // Hàm thêm một row
     //Created by NVTuan ngày 1/4/2019
     addRow() {
-        var id = $('.rowSelected').attr('customerId'); // Lấy ra biến id của row
-        alert(id);
+
     }
 
     // Hàm nhân bản một row
     //Created by NVTuan ngày 1/4/2019
     dupplicateRow() {
-        var id = $('.rowSelected').attr('customerId'); // Lấy ra biến id của row
-        alert(id);
+
     }
 
     // Hàm sửa một row
     //Created by NVTuan ngày 1/4/2019
     editRow() {
-        var id = $('.rowSelected').attr('customerId'); // Lấy ra biến id của row
-        alert(id);
+
     }
 
     // Hàm xóa một row
     //Created by NVTuan ngày 1/4/2019
     deleteRow() {
-        var id = $('.rowSelected').attr('customerId'); // Lấy ra biến id của row
-        alert(id);
+
     }
 
     // Hàm nạp dữ liệu
     //Created by NVTuan ngày 1/4/2019
     refreshData() {
-        var id = $('.rowSelected').attr('customerId'); // Lấy ra biến id của row
-        alert(id);
+
     }
-
 }
-
-$(document).ready(function () {
-    var CJS = new CustomerJS(); // Khởi tạo đối tượng
-    CJS.loadData();// Gọi hàm load dữ liệu lên bảng
-    $('#tableCustomer').on('click', '#tbodyCustomer tr', CusObject.rowSelected); // Gọi hàm chọn một bản ghi 
-    //$('#btnAdd').on('click', CJS.addRow); // Gọi hàm thêm một hàng
-    $('#btnDupplicate').on('click', CJS.dupplicateRow); // Gọi hàm nhân bản một hàng
-    $('#btnEdit').on('click', CJS.editRow); // Gọi hàm sửa một hàng
-    $('#btnDelete').on('click', CJS.deleteRow); // Gọi hàm xóa một hàng
-    $('#btnRefresh').on('click', CJS.refreshData); // Gọi hàm nạp dữ liệu
-    $('#btnAdd').click(function () {
-        dialog = $("#dialogCustomer").dialog({
-            autoOpen: true,
-            height: 334,
-            width: 680,
-            modal: true,
-            buttons: {
-                "Cất": function () {
-                },
-                "Đóng": function () {
-                    dialog.dialog("close");
-                }
-            },
-            close: function () {
-               
-            }
-
-        });
-    });
-});
+var CJS = new CustomerJS(); // Khởi tạo đối tượng

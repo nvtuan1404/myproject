@@ -3,3 +3,18 @@
     opacity: 1;
     background-color: rgba(10,10,10,.4) !important;
 }
+
+.ui-widget-header {
+    border-color: #0072bc !important;
+    background-color: #0072bc !important;
+    color: #fff;
+    border: none;
+    font-weight: normal;
+    font-size: 13px;
+}
+.ui-dialog{
+    padding: unset !important;
+}
+    .ui-dialog .ui-dialog-titlebar-close{
+        border-radius: 37px;
+    }

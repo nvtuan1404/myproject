@@ -25,3 +25,4 @@ E:\NVTuan\myproject\MISA.CUKCUK\MISA.CUKCUK.CustomerPage\obj\Debug\netcoreapp2.1
 E:\NVTuan\myproject\MISA.CUKCUK\MISA.CUKCUK.CustomerPage\obj\Debug\netcoreapp2.1\MISA.CUKCUK.CustomerPage.RazorTargetAssemblyInfo.cache
 E:\NVTuan\myproject\MISA.CUKCUK\MISA.CUKCUK.CustomerPage\obj\Debug\netcoreapp2.1\MISA.CUKCUK.CustomerPage.dll
 E:\NVTuan\myproject\MISA.CUKCUK\MISA.CUKCUK.CustomerPage\obj\Debug\netcoreapp2.1\MISA.CUKCUK.CustomerPage.pdb
+E:\NVTuan\myproject\MISA.CUKCUK\MISA.CUKCUK.CustomerPage\obj\Debug\netcoreapp2.1\MISA.CUKCUK.CustomerPage.csprojAssemblyReference.cache
