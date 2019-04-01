@@ -12,6 +12,8 @@
     <link href="/CSS/common/grid.css" rel="stylesheet" />
     <link href="/CSS/common/toolbar-pagging.css" rel="stylesheet" />
     <link href="/CSS/Views/index.css" rel="stylesheet" />
+    <link href="/CSS/lib/jquery-ui.min.css" rel="stylesheet" />
+    <link href="/CSS/base/dialog.css" rel="stylesheet" />
     <link href="/Contents/Images/favicon.jpg" rel="shortcut icon" />
 </head>
 <body>
@@ -132,41 +134,41 @@
                     </div>
                     <!--Phần toolbar header-->
                     <div class="toolbar-header">
-                        <div class="toolbar-header-item">
+                        <div class="toolbar-header-item" id="btnAdd">
                             <div class="toolbar-header-item-icon toolbar-header-item-add"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-add">Thêm</div>
                         </div>
-                        <div class="toolbar-header-item">
+                        <div class="toolbar-header-item" id="btnDupplicate">
                             <div class="toolbar-header-item-icon toolbar-header-item-dupplicate"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-dupplicate">Nhân bản</div>
                         </div>
-                        <div class="toolbar-header-item">
+                        <div class="toolbar-header-item" id="btnEdit">
                             <div class="toolbar-header-item-icon toolbar-header-item-edit"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-edit">Sửa</div>
                         </div>
-                        <div class="toolbar-header-item">
+                        <div class="toolbar-header-item" id="btnDelete">
                             <div class="toolbar-header-item-icon toolbar-header-item-delete"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-delete">Xóa</div>
                         </div>
-                        <div class="toolbar-header-item">
+                        <div class="toolbar-header-item" id="btnRefresh">
                             <div class="toolbar-header-item-icon toolbar-header-item-refresh"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-refresh">Nạp</div>
                         </div>
-                        <div class="toolbar-header-boder-left"></div>
+                        <div class="toolbar-header-boder-left" id="btnImport"></div>
                         <div class="toolbar-header-item">
                             <div class="toolbar-header-item-icon toolbar-header-item-import"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-import">Nhập khẩu</div>
                         </div>
-                        <div class="toolbar-header-item">
+                        <div class="toolbar-header-item" id="btnExport">
                             <div class="toolbar-header-item-icon toolbar-header-item-export"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-export">Xuất Khẩu</div>
                         </div>
-                        <div class="toolbar-header-boder-left"></div>
+                        <div class="toolbar-header-boder-left" id="btnLump"></div>
                         <div class="toolbar-header-item">
                             <div class="toolbar-header-item-icon toolbar-header-item-lump"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-lump">Gộp khách hàng</div>
                         </div>
-                        <div class="toolbar-header-boder-left"></div>
+                        <div class="toolbar-header-boder-left" id="btnHelp"></div>
                         <div class="toolbar-header-item">
                             <div class="toolbar-header-item-icon toolbar-header-item-help"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-help">Giúp</div>
@@ -241,7 +243,7 @@
                                                 <input class="filter-input" />
                                             </div>
                                         </th>
-                                        <th fieldData="amount">
+                                        <th fieldData="amount" dataType="money">
                                             <div class="grid-column-title column-amount">Số tiền nợ</div>
                                             <div class="grid-column-filter">
                                                 <div class="filter-option-amount"></div>
@@ -255,7 +257,7 @@
                                                 <input class="filter-input" />
                                             </div>
                                         </th>
-                                        <th fieldData="fiveFoodMember">
+                                        <th fieldData="fiveFoodMember" dataType="checkbox">
                                             <div class="grid-column-title column-5food-member">Thành viên 5Food</div>
                                             <div class="grid-column-filter">
                                                 <input class="filter-input" />
@@ -263,7 +265,7 @@
 
                                             </div>
                                         </th>
-                                        <th fieldData="unfollow">
+                                        <th fieldData="unfollow" dataType="checkbox">
                                             <div class="grid-column-title column-unfollow">Ngừng theo dõi</div>
                                             <div class="grid-column-filter">
                                                 <input class="filter-input" />
@@ -309,8 +311,13 @@
             </div>
         </div>
     </div>
+    <div id="dialogCustomer" title="Khách hàng"></div>
     <script src="/Scripts/lib/jquery-3.3.1.min.js"></script>
+    <script src="/Scripts/lib/jquery-ui.min.js"></script>
     <script src="/Scripts/lib/bootstrap.min.js"></script>
+    <script src="/Scripts/lib/popper.min.js"></script>
+    <script src="/Scripts/common/common.js"></script>
+    <script src="/Scripts/base/dialog.js"></script>
     <script src="/Scripts/Views/index.js"></script>
 </body>
 </html>

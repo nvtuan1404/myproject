@@ -1,0 +1,5 @@
+﻿.ui-widget-overlay {
+    background: #aaa;
+    opacity: 1;
+    background-color: rgba(10,10,10,.4) !important;
+}
