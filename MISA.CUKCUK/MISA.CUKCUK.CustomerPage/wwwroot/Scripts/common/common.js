@@ -53,5 +53,5 @@ var CusObject = Object.create({
     rowSelected: function () {
         $('tr').removeClass('rowSelected');
         $(this).addClass('rowSelected');
-    }
+    },
 });

@@ -1,22 +1,27 @@
-﻿$(document).ready(function () {
-    CJS.loadData();// Gọi hàm load dữ liệu lên bảng
-    var buttons = [{ text: "Lưu" }, { text: "Hủy" }, { text: "Giúp" }];
-    testDialog = new Dialog("#dialogCustomer", 400, 400, buttons);
-});
-
+﻿// Lớp CustomerJS chứa các hàm thêm, sửa, xóa, nạp, nhân bản và hàm khởi tạo các sự kiện
+// Created by NVTuan - 29/3/2019
 class CustomerJS {
 
-    constructor(name) {
-        this.Adress = name;
-        this.initEvents();
-        this.DialogDetail = new Dialog("#dialogCustomer", 400, 400);
+    constructor() {
+        this.loadData(); // Gọi hàm load dữ liệu lên bảng
+        this.initEvents(); // Khởi tạo hàm chứa các sự kiện
     }
 
     // Hàm khởi tạo các sự kiện
     // Created by NVTuan - 1/4/2019
     initEvents() {
         $('#tableCustomer').on('click', '#tbodyCustomer tr', CusObject.rowSelected); // Gọi hàm chọn một bản ghi 
-    }   
+        $(document).on('click', '#btnAdd', function () {
+            dia.dialog.dialog('open');
+        });
+        $(document).on('click', '#btnDupplicate', function () {
+            dia.dialog.dialog('open');
+        });
+        $(document).on('click', '#btnEdit', function () {
+            dia.dialog.dialog('open');
+        });
+        //$(document).on('click', '#btnAdd', this.addRow.bind(this));
+    }
 
     // Hàm loadData để gọi api lấy dữ liệu đổ về
     // Created by NVTuan ngày 29/3/2019
@@ -26,18 +31,19 @@ class CustomerJS {
             method: "GET",
             success: function (data) {
                 CusObject.builDataIntoTable(data);
-            },
+            },  
             error: function () {
                 console.log("Có lỗi khi lấy dữ liệu");
             }
         });
     }
 
+
     // Hàm thêm một row
     //Created by NVTuan ngày 1/4/2019
     addRow() {
 
-    }
+    } 
 
     // Hàm nhân bản một row
     //Created by NVTuan ngày 1/4/2019
@@ -63,4 +69,5 @@ class CustomerJS {
 
     }
 }
+var dia = new Dialog('.dialogCustomer', 680, 386);
 var CJS = new CustomerJS(); // Khởi tạo đối tượng
