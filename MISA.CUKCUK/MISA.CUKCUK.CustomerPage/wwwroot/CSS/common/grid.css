@@ -8,11 +8,12 @@ table {
 
     table thead th {
         font-weight: normal;
-        background-color: #ededed !important;
     }
 
     table thead th, tr {
-        border: 1px solid #ccc;
+        border-width: 1px 1px;
+        border-style: solid;
+        border-color: #ccc;
     }
 
     table tbody tr, td {
@@ -47,7 +48,7 @@ table tbody tr:hover {
     .grid .table-responsive {
         position: absolute;
         bottom: 0px;
-        top: 0px;
+        top: 57px;
         overflow: auto;
     }
 
